@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://gaugusti09.github.io/PUI-2024S/`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/gaugusti09/PUI-2024S`
