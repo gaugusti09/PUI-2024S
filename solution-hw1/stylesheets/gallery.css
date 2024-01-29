@@ -1,0 +1,51 @@
+#logo {
+    width: 400px;
+}
+
+.content {
+    max-width: 600px;
+    text-align:center;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.directory {
+    max-width: 200px;
+    margin: auto;
+}
+
+#selected {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+#deselected {
+    font-weight: lighter;
+}
+
+#title {
+    font-size: 20px;
+}
+
+.menu {
+    margin: auto;
+}
+
+.menu-item {
+    margin: auto;
+    width: 400px;
+}
+
+.menu-item img {
+    width: 400px;
+    border: 2px solid black;
+}
+
+.menu-item p {
+    text-align: left;
+}
+
+.imgTitle {
+    text-decoration: underline;
+}
