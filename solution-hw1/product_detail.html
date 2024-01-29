@@ -3,7 +3,7 @@
 
   <meta charset="UTF-8">
   <title>Product Gallery</title>
-  <link rel="stylesheet" href="../solution-hw1/stylesheets/gallery.css">
+  <link rel="stylesheet" href="../solution-hw1/stylesheets/prod_detail.css">
   
   <body>
 
@@ -15,11 +15,53 @@
     <div class="content">
 
       <div class="directory">
-        <h1>PRODUCTS</h1>
-        <h1>CART</h1>
+        <h1 id="selected">PRODUCTS</h1>
+        <h1 id="deselected">CART</h1>
       </div>
 
-      
+      <h1 id="title">Our hand-made cinnamon rolls</h1>
+
+      <div id="cart">
+        <div class="cart-item">
+          <img src="..//assets/products/original-cinnamon-roll.jpg">
+          <p class="cart-text">Customize our delicious, hand-made cinnamon buns to your liking!</p>
+
+          <div id="dropdown">
+
+            <!-- Code format: W3Schools, https://www.w3schools.com/css/css_dropdowns.asp -->
+            <div class="dropdown">
+              <p> Glazing: </p>
+              <button class="dropbtn">Keep Original</button>
+              <div class="dropdown-content">
+                <a href="#">Sugar milk</a>
+                <a href="#">Vanilla milk</a>
+                <a href="#">Double Chocolate</a>
+              </div>
+            </div>
+
+            <p> Pack size:</p>
+
+            <div class="dropdown">
+              <button class="dropbtn">1</button>
+              <div class="dropdown-content">
+                <a href="#">3</a>
+                <a href="#">6</a>
+                <a href="#">12</a>
+              </div>
+            </div>
+
+            <p></p>
+          </div>
+
+        </div>
+
+        <div>
+          <h2>2.49$</h2>
+          <button class="button">Add to Cart</button> 
+        </div>
+
+      </div>
+
     </div>
   </body>
 </html>
