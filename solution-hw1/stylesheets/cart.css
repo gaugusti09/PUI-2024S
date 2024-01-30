@@ -48,6 +48,10 @@ hr.solid {
     border-top: 3px solid black;
 }
 
+.price {
+    font-size: 16px;
+}
+
 .button {
     background-color: yellow;
     border: 1px solid black;
