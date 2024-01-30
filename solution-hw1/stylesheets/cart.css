@@ -29,24 +29,29 @@
     font-size: 20px;
 }
 
-.menu {
-    margin: auto;
-}
-
-.menu-item {
+.cart-item {
     margin: auto;
     width: 400px;
 }
 
-.menu-item img {
-    width: 400px;
+.cart-item img {
+    width: 200px;
     border: 2px solid black;
 }
 
-.menu-item p {
-    text-align: left;
+.remove-text {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.img-title {
-    text-decoration: underline;
+hr.solid {
+    border-top: 3px solid black;
+}
+
+.button {
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
