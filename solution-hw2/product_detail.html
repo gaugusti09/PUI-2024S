@@ -3,30 +3,32 @@
 
   <meta charset="UTF-8">
   <title>Product Detail</title>
-  <link rel="stylesheet" href="../solution-hw1/stylesheets/prod_detail.css">
+  <link rel="stylesheet" href="../solution-hw2/stylesheets/prod_detail.css">
   
   <body>
 
     <div class="header">
-      <a href="../solution-hw1/index.html"><img id="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
-      <hr>
+      <div class="logo-container">
+        <a href="../solution-hw2/index.html"><img id="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
+      </div>
+      
+      <div class="directory">
+        <a href="../solution-hw2/index.html"><h1 id="selected">PRODUCTS</h1></a>
+        <a href="../solution-hw2/shopping_cart.html"><h1 id="deselected">CART</h1></a>
+        <p class="notif-circle">2</p>
+        <hr>
+      </div>
     </div>
 
     <div class="content">
 
-      <div class="directory">
-        <a href="../solution-hw1/index.html"><h1 id="selected">PRODUCTS</h1></a>
-        <a href="../solution-hw1/shopping_cart.html"><h1 id="deselected">CART</h1></a>
-      </div>
-
       <h1 id="title">Our hand-made cinnamon rolls</h1>
 
       <div id="cart">
-        <div class="cart-item">
-          <img src="..//assets/products/original-cinnamon-roll.jpg">
-          <p class="cart-text">Customize our delicious, hand-made cinnamon buns to your liking!</p>
+        <img src="..//assets/products/original-cinnamon-roll.jpg">
 
-          <div id="dropdown">
+        <div id="cart-desc">
+          <p class="cart-text">Customize our delicious, hand-made cinnamon buns to your liking!</p>
 
             <!-- Code format: W3Schools, https://www.w3schools.com/css/css_dropdowns.asp -->
             <div class="dropdown">
@@ -39,9 +41,8 @@
               </div>
             </div>
 
-            <p> Pack size:</p>
-
             <div class="dropdown">
+              <p> Pack size:</p>
               <button class="dropbtn">1</button>
               <div class="dropdown-content">
                 <a href="#">3</a>
@@ -50,19 +51,21 @@
               </div>
             </div>
 
+            <div id="cart-add">
+              <h2>2.49$</h2>
+              <button class="button">Add to Cart</button> 
+            </div>
+
             <p></p>
-          </div>
+
+
+
 
         </div>
 
-        <div>
-          <h2>2.49$</h2>
-          <button class="button">Add to Cart</button> 
-        </div>
-
+    
       </div>
 
-    </div>
   </body>
 </html>
 
