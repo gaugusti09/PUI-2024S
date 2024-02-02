@@ -1,42 +1,88 @@
 #logo {
-    width: 400px;
+    width: 300px;
+    float: left;
 }
 
 .content {
-    max-width: 600px;
-    text-align:center;
+    max-width: auto;
+    text-align: center;
     margin: auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .directory {
-    max-width: 200px;
     margin: auto;
-    font-size: 12px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.directory h1 {
+    font-size: 23px;
+    display: inline;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.directory hr {
+    border-top: 3px solid black;
 }
 
 #selected {
-    background-color: yellow;
     color: black;
     font-weight: bold;
+    background-color: yellow;
 }
 
 #deselected {
     font-weight: lighter;
 }
 
+.notif-circle {
+    width: 55px; 
+    line-height: 100px;
+    border-radius: 50%;
+    vertical-align: super;
+    padding-right: 1.5px;
+   
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-color: red;
+    color: white;
+    display: inline;
+}
+
 #title {
     font-size: 20px;
+    padding-top: 30px;
+}
+
+.remove-text {
+    max-width: autopx;
+    padding-right: 340px;
 }
 
 .cart-item {
     margin: auto;
-    width: 400px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
 }
 
 .cart-item img {
     width: 200px;
     border: 2px solid black;
+}
+
+.cart-item p {
+    width: 200px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.subtotal {
+    padding-top: 50px;
 }
 
 .remove-text {
