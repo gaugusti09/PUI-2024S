@@ -1,0 +1,160 @@
+#logo {
+    width: 300px;
+    float: left;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+  
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 600px;
+    text-align:center;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.directory {
+    margin: auto;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.directory h1 {
+    font-size: 23px;
+    display: inline;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.directory hr {
+    border-top: 3px solid black;
+}
+
+#selected {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+#deselected {
+    font-weight: lighter;
+}
+
+.notif-circle {
+    width: 55px; 
+    line-height: 100px;
+    border-radius: 50%;
+    vertical-align: super;
+    padding-right: 1.5px;
+   
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background-color: red;
+    color: white;
+    display: inline;
+}
+
+#title {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#cart {
+    display: flex;
+    padding: 50px;
+}
+
+#cart-desc {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+#cart img {
+    margin: auto;
+    width: 400px;
+    float: left;
+    border: 2px solid black;
+}
+
+h2 {
+    margin: 0;
+    display: inline-block;
+    font-size: 16px;
+    padding: 30px;
+}
+ 
+.button {
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 11px;
+    width:80px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#cart-add {
+    width: 300px;
+    position: fixed;
+    bottom: 50px;
+}
+
+
+/*Code format: W3Schools, https://www.w3schools.com/css/css_dropdowns.asp --> */
+
+.dropbtn {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
