@@ -3,18 +3,19 @@
 
   <meta charset="UTF-8">
   <title>Product Detail</title>
-  <link rel="stylesheet" href="../solution-hw2/stylesheets/prod_detail.css">
+  <link rel="stylesheet" href="../solution-hw3/stylesheets/prod_detail.css">
+  <script defer src="app.js"></script>
   
   <body>
 
     <div class="header">
       <div class="logo-container">
-        <a href="../solution-hw2/index.html"><img id="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
+        <a href="../solution-hw3/index.html"><img id="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
       </div>
       
       <div class="directory">
-        <a href="../solution-hw2/index.html"><h1 id="selected">PRODUCTS</h1></a>
-        <a href="../solution-hw2/shopping_cart.html"><h1 id="deselected">CART</h1></a>
+        <a href="../solution-hw3/index.html"><h1 id="selected">PRODUCTS</h1></a>
+        <a href="../solution-hw3/shopping_cart.html"><h1 id="deselected">CART</h1></a>
         <p class="notif-circle">2</p>
         <hr>
       </div>
@@ -30,31 +31,24 @@
         <div id="cart-desc">
           <p class="cart-text">Customize our delicious, hand-made cinnamon buns to your liking!</p>
 
-            <!-- Code format: W3Schools, https://www.w3schools.com/css/css_dropdowns.asp -->
-            <div class="dropdown">
-              <p> Glazing: </p>
-              <button class="dropbtn">Keep Original</button>
-              <div class="dropdown-content">
-                <a href="#">Sugar milk</a>
-                <a href="#">Vanilla milk</a>
-                <a href="#">Double Chocolate</a>
-              </div>
-            </div>
+            <p> Glazing: </p>
+            <select id="car-select">
+              <option value="0">Toyota Corolla</option>
+              <option value="1">VW Beetle</option>
+              <option value="2">Chevy Corvette</option>
+            </select>
+            <h4 id="car-title">none</h4>
+            <p id="car-info"></p>
 
-            <div class="dropdown">
-              <p> Pack size:</p>
-              <button class="dropbtn">1</button>
-              <div class="dropdown-content">
-                <a href="#">3</a>
-                <a href="#">6</a>
-                <a href="#">12</a>
-              </div>
-            </div>
 
-            <div id="cart-add">
-              <h2>2.49$</h2>
-              <button class="button">Add to Cart</button> 
-            </div>
+            <p> Pack Size:</p>
+            <select id="car-select">
+              <option value="0">Toyota Corolla</option>
+              <option value="1">VW Beetle</option>
+              <option value="2">Chevy Corvette</option>
+            </select>
+            <h4 id="car-title">none</h4>
+            <p id="car-info"></p>
 
             <p></p>
 
