@@ -60,12 +60,13 @@ function sizePopulate() {
     };
 }
 
-function updatePriceGl() {
+function updatePrice() {
     var glazeSel = document.getElementById('glazingOptions');
     var value = glazeSel.value;
     var add = 0.00;
+    
     if (value != ("Keep original") && value != ("Sugar milk")){
-        if (value=="Vanilla milk") {
+        if (value == "Vanilla milk") {
             add = .5
         } else {
             add = 1.5
@@ -75,18 +76,16 @@ function updatePriceGl() {
     var packSel = document.getElementById('packOptions');
     var value = packSel.value;
     var size = 1;
-    if (value==3) {
+    if (value == 3) {
         size = 3;
     } else {
-        if (value==6) {
+        if (value == 6) {
             size = 5;
-        } else {
-            size = 10;
+        } else if (value == 12) {
+          size = 10;
         }
     }
-    console.log(add)
-    console.log(size)
-    let finalP = ((2.49 + add)*size);
+    let finalP = (2.49 + add)*size;
     let pricing = document.querySelector("#totalPrice");
     pricing.innerText = "$" + finalP.toFixed(2);
 }
@@ -99,6 +98,6 @@ sizePopulate();
 
 let elements = document.querySelectorAll('select');
 for (const element of elements) {
-    element.addEventListener('change', updatePriceGl);
+    element.addEventListener('change', updatePrice);
   }
 

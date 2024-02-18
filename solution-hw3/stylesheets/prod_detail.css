@@ -96,7 +96,7 @@ a:active {
     border: 2px solid black;
 }
 
-h2 {
+#totalPrice {
     margin: 0;
     display: inline-block;
     font-size: 16px;
@@ -121,40 +121,7 @@ h2 {
 
 /*Code format: W3Schools, https://www.w3schools.com/css/css_dropdowns.asp --> */
 
-.dropbtn {
-    background-color: white;
-    border: 1px solid gray;
-    padding: 5px;
-    width: 200px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
-
-#select {
+.select {
     position: relative;
-    display: inline-block;
-}
-
-#select-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.select-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.select-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.select:hover .select-content {
-    display: block;
+    font-family: Arial;
 }
