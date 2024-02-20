@@ -24,3 +24,14 @@ const rolls = {
         "imageFile": "strawberry-cinnamon-roll.jpg"
     }    
 };
+
+
+const cart = [];
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get(‘roll’);
+
+console.log(rollType);
+//Extract the current roll’s information (name, price, image path) 
+//from the dictionary in step (1) and update relevant DOM elements:
+
