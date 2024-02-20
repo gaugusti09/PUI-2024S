@@ -98,7 +98,7 @@ a:active {
     border: 2px solid black;
 }
 
-#totalPrice {
+#base-price {
     margin: 0;
     display: inline-block;
     font-size: 13px;
