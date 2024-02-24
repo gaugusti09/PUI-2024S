@@ -17,7 +17,6 @@ let allGlazes = [
     }
   ];
 
-
 let allSizes= [
     {
       quantity: '1',
