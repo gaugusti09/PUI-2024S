@@ -1,102 +1,83 @@
-let allGlazes = [
-    {
-      name: 'Keep original',
-      price: 0.00,
-    },
-    {
-      name: 'Sugar milk',
-      price: 0.00,
-    },
-    {
-      name: 'Vanilla milk',
-      price: 0.50,
-    },
-    {
-      name: 'Double Chocolate',
-      price: 1.50,
-    }
-  ];
+// track all of the Glaze prices and their adaptations!
+const allGlazes = {"Keep original" : 0.0,
+	"Sugar milk" : 0.0,
+	"Vanilla milk" : 0.50,
+	"Double chocolate" : 1.50};
 
-let allSizes= [
-    {
-      quantity: '1',
-      adaptation: 1,
-    },
-    {
-      quantity: '3',
-      adaptation: 3,
-    },
-    {
-       quantity: '6',
-       adaptation: 5,
-    },
-    {
-       quantity: '12',
-       adaptation: 10,
-    }
-  ];
+  // track all of the Size prices and their adaptations!
+const allSizes = {"1" : 1, 
+  "3" : 3, 
+  "6" : 5, 
+  "12" : 10};
 
+// Method Constants, set as bases for Rolls
+let glazeSel = "Keep original";
+let basePrice = 2.49;
+let packSel = 1;
+let cart = [];
 
+//Populate the selects!!
 function glazingPopulate() {
-    //populate glazing dropdowns
-    var glazeSel = document.getElementById('glazingOptions');
-    for(let i = 0; i < allGlazes.length; i++) {
-        let option =document.createElement('option');
-        option.innerHTML = allGlazes[i].name
-        glazeSel.appendChild(option)
-        //return allGlazes[i].price
-    };
+  const queryStr = new URLSearchParams(window.location.search);
+  const rollType = queryStr.get("roll");
+  const rollPrice = rolls[rolltype]["basePrice"];
+  const imgP = "images/products/" + roll[rollType]["img"];
+
+  //update page ! ! !
+  const headerElement = document.querySelector("#cart-header-text"); // the header
+  headerElement.innerText = rollType + ' Cinnamon Roll';
+  const cartBunImg = document.querySelector("#cinnamon-img"); // the image
+  cartBunImg.src = '..//assets/products/' + imgFile;
+  let cartPrice = document.querySelector("#base-price"); // price
+  cartPrice.innerText = price;
+
 }
 
-function sizePopulate() {
-    //populate packsize dropdowns
-    var sizeSel = document.getElementById('packOptions');
-    for(var i = 0; i < allSizes.length; i++) {
-        let option = document.createElement('option');
-        option.innerHTML = allSizes[i].quantity
-        sizeSel.appendChild(option)
-        //return allSizes[i].adaptation
-    };
+function sizePackPopulate() {
+  const sizeSel = document.querySelector("select#glazing-options");
+  for (const [glaze, price] of Object.entries(glazingPrices)) {
+    const option = document.createElement('option');
+    option.textContent = glazing;
+    option.value = price;
+    sizeSel.appendChild(option);
+  }
+
+  const packSel = document.getElementById('packOptions');
+  for (const [pack, price] of Object.entries(packPrices)) {
+    const option = document.createElement('option');
+    option.textContent = pack;
+    option.value = price;
+    packSel.appendChild(option);
+  }
 }
 
-function updatePrice() {
-    var glazeSel = document.getElementById('glazingOptions');
-    var value = glazeSel.value;
-    var add = 0.00;
-    
-    if (value != ("Keep original") && value != ("Sugar milk")){
-        if (value == "Vanilla milk") {
-            add = .5
-        } else {
-            add = 1.5
-        }
-    }
+function glazeChange(elem) {
+  glazeOpt = element.option[elem.index].text;
+  updatePrice();
+}
 
-    var packSel = document.getElementById('packOptions');
-    var value = packSel.value;
-    var size = 1;
-    if (value == 3) {
-        size = 3;
-    } else {
-        if (value == 6) {
-            size = 5;
-        } else if (value == 12) {
-          size = 10;
-        }
-    }
-    let finalP = (2.49 + add)*size;
-    let pricing = document.querySelector("#totalPrice");
-    pricing.innerText = "$" + finalP.toFixed(2);
+function packChange(elem) {
+  packOpt = element.option[elem.index].text;
+  updatePrice();
 }
 
 glazingPopulate();
-sizePopulate();
+sizePackPopulate(); //????
 
+function updatePrice() {
+  const glazeSel = glazingPrices[glazeOpt];
+  const basePrice = packPrices[packOpt];
+  // calculation goes here
+  // ????const totalPrice = ;
+}
 
-//update the price when either selector changes
-
-let elements = document.querySelectorAll('select');
-for (const element of elements) {
-    element.addEventListener('change', updatePrice);
+class CinnamonRoll {
+  constructor(rollSelect, glazingSelect, packSelect, basePrice) {
+      this.type = rollSelect
+      this.glazing =  glazingSelect;
+      this.size = packSelect;
+      this.basePrice = basePrice;
   }
+}
 
+// can push this....???????

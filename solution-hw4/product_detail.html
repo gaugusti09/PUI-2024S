@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Product Detail</title>
   <link rel="stylesheet" href="../solution-hw4/stylesheets/prod_detail.css">
-  <script defer src="app.js"></script>
-  <script defer src="rollsData.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="rollsData.js"></script>
 
   
   <body>
@@ -33,10 +33,10 @@
         <div id="cart-desc">
           <p id="cart-text">Customize our delicious, hand-made cinnamon buns to your liking!</p>
             <p> Glazing: </p>
-            <select class="select" id="glazingOptions"></select>
+            <select id="glazingOptions" onchange="glazeChange(this)""></select>
 
             <p> Pack Size: </p>
-            <select class="select" id="packOptions"></select>
+            <select id="packOptions" onchange="packChange(this)"></select>
 
             <p></p>
 
