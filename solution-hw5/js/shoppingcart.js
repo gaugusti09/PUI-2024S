@@ -1,5 +1,7 @@
 const cart = [];
 
+console.log("Hiiii");
+
 // Cinnamon Roll class from HW4
 class Roll {
     constructor(rollType, rollGlazing, packSize, rollPrice) {
@@ -18,35 +20,27 @@ const appleRoll = new Roll('Apple', 'Original', 3, 3.49);
 
 // initially ! add the rolls to the cart
 function populateCart() {
-    console.log(cart);
     cart.push(originalRoll);
     cart.push(walnutRoll);
     cart.push(raisinRoll);
     cart.push(appleRoll)
-
     console.log(cart);
+
 }
 
-console.log(2);
 populateCart();
-
-
+displayRolls();
 // price computation
 
 function appendRoll(givenRoll){
-    cart.push(givenRoll);
-    let template = document.getElementById(givenRoll.type);
-    let templateContent = template.content;
+    let temp = document.getElementById(givenRoll.type);
+    let templateContent = temp.content;
     document.body.appendChild(templateContent);
 }
-
-
-populateCart();
 
 function displayRolls() {
     for (i=0; i<cart.length; i++) {
         appendRoll(cart[i]);
-        console.log('heyyy');
     }
 }
 
@@ -55,5 +49,3 @@ function removeRoll(givenRoll){
     const element = document.getElementById(givenRoll.type);
     element.remove();
 }
-
-console.log("Hello world!"); 
