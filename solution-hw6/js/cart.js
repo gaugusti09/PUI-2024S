@@ -65,39 +65,39 @@ function addNewRoll(roll) {
     const cartWrapper = document.querySelector(".cart-wrapper");
     //cartWrapper.appendChild(cartItem);
     //rollIndexes +=1; vhjfdns
-
     // removing roll items!
     
     let currentRoll = rollIndexes;
-    //console.log(cartWrapper.querySelector(`item-${currentRoll}`));
     cartItem.querySelector(".remove").onclick = function() {
-        //console.log(currentRoll);
+        var selection="#item-" + currentRoll.toString();
+        console.log(currentRoll);
         console.log("bye bye!");
-        console.log(currentRoll.toString());
-        console.log(cartWrapper.querySelector(`item-${currentRoll.toString()}`));
-
-        
-        //cartWrapper.querySelector(`item-${currentRoll}`).remove();
-        //shoppingCart.splice(shoppingCart.indexOf(roll), 1);
-        //updateTotalPrice();
+        //console.log(cartWrapper.querySelector(selection));
+        cartWrapper.querySelector(selection).remove();
+        updateCartPrice();
     }
 
     cartWrapper.appendChild(cartItem);
-    rollIndexes +=1;
+    rollIndexes ++;
 }
+
+
+//function addPrice(money) {
+//    return roll.addPrice+money
+//}
+
 //revamped function from prev hw -- use this now to update items from this page!
-// function updateTotalPrice() {
-// 	const glazingPrice = glazingPrices[glazingOption];
-// 	const packPrice = packPrices[packOption];
-// 	const totalPrice = (basePrice + glazingPrice) * packPrice;
-// 	const totalPriceField = document.querySelector("#add-cart span");
-// 	totalPriceField.textContent = "$" + totalPrice.toFixed(2);
-// }
+function updateCartPrice() {
+    let price = 0;
+    //cart.forEach(addPrice(price));
+    cartItems.forEach(roll => totalPrice += roll.calculatedPrice);
+    const priceElem = document.querySelector(".total-price");
+    priceElem.textContent = "$" + price.toFixed(2);
+}
 
 
 function updateCartPage() {
     populateInitCart();
     shoppingCart.forEach(addNewRoll);
-
-    //updateTotalPrice();
+    updateCartPrice();
 }
