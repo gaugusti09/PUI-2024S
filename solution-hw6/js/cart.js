@@ -94,9 +94,19 @@ function updateCartPrice() {
     priceElem.textContent = "$" + price.toFixed(2);
 }
 
+function updateBadge(){
+    const cartData = JSON.parse(localStorage.getItem("newCart"));
+    console.log(cartData.length)
+    let cartLength = cartData.length;
+    const badgeElem = document.querySelector("#cart-badge");
+    badgeElem.textContent = cartLength;
+}
+
+updateBadge();
 
 function updateCartPage() {
     populateInitCart();
+    updateBadge();
     //shoppingCart.forEach(addNewRoll);
     //updateCartPrice();
 }
