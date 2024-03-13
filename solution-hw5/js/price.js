@@ -1,3 +1,19 @@
+const glazingPrices = {
+	"Keep original" : 0.0,
+	"Sugar milk" : 0.0,
+	"Vanilla milk" : 0.50,
+	"Double chocolate" : 1.50
+};
+
+const packPrices = {
+	"1" : 1, "3" : 3, "6" : 5, "12" : 10
+};
+
+let glazingOption = "Keep original";
+let packOption = 1;
+let basePrice = 0;
+let rollType = NaN;
+let cart = [];
 
 populateCinnamonData();
 populateSelectOptions();
@@ -39,7 +55,6 @@ function populateSelectOptions() {
 		packSelect.appendChild(option);
 	}
 }
-
 
 /* Record the current glazing option and update the total price */
 function glazingChange(element) {
