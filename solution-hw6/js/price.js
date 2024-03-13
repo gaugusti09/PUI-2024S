@@ -86,7 +86,18 @@ class Roll {
 }
 
 function printCart() {
-	const roll = new Roll(rollType, glazingOption, packOption, basePrice);
-	cart.push(roll);
-	console.log(cart);
+	const glazingPrice = glazingPrices[glazingOption];
+	const packPrice = packPrices[packOption];
+	const totalPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
+
+	//your roll~~
+	const selectedRoll = new Roll(rollType, glazingOption, packOption, totalPrice);
+	
+	cart.push(selectedRoll);
+	//console.log(cart);
+
+	localStorage.setItem('newCart', JSON.stringify(cart));
+
+	const cartData = JSON.parse(localStorage.getItem("newCart"));
+	console.log(cartData);
 }
