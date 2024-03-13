@@ -56,7 +56,6 @@ function populateSelectOptions() {
 	}
 }
 
-
 /* Record the current glazing option and update the total price */
 function glazingChange(element) {
 	glazingOption = element.options[element.selectedIndex].text;
