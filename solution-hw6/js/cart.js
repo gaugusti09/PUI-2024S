@@ -16,19 +16,19 @@ class Roll {
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = rollPrice;
-        this.calculatedPrice = (this.basePrice + glazingPrices[this.glazing]) * packPrices[this.size];
+        this.calcPrice = (this.basePrice + glazingPrices[this.glazing]) * packPrices[this.size];
     }
 }
 
 const shoppingCart = [];
 let rollIndexes = 0; // use these to #nayeon'spop rolls off !
 
-function populateInitCart() {
-    shoppingCart.push(new Roll("Original", "Sugar milk", 1, rolls["Original"]["basePrice"]));
-    shoppingCart.push(new Roll("Walnut", "Vanilla milk", 12, rolls["Walnut"]["basePrice"]));
-    shoppingCart.push(new Roll("Raisin", "Sugar milk", 3, rolls["Raisin"]["basePrice"]));
-    shoppingCart.push(new Roll("Apple", "Keep original  ", 3, rolls["Apple"]["basePrice"]));
-}
+// function populateInitCart() {
+//     shoppingCart.push(new Roll("Original", "Sugar milk", 1, rolls["Original"]["basePrice"]));
+//     shoppingCart.push(new Roll("Walnut", "Vanilla milk", 12, rolls["Walnut"]["basePrice"]));
+//     shoppingCart.push(new Roll("Raisin", "Sugar milk", 3, rolls["Raisin"]["basePrice"]));
+//     shoppingCart.push(new Roll("Apple", "Keep original  ", 3, rolls["Apple"]["basePrice"]));
+// }
 
 //takes a roll && adds it to the page!
 function addNewRoll(roll) {
@@ -90,14 +90,14 @@ function addNewRoll(roll) {
 function updateCartPrice() {
     let price = 0;
     //cart.forEach(addPrice(price));
-    cartItems.forEach(roll => totalPrice += roll.calculatedPrice);
+    cartItems.forEach(roll => totalPrice += roll.calcPrice);
     const priceElem = document.querySelector(".total-price");
     priceElem.textContent = "$" + price.toFixed(2);
 }
 
 
 function updateCartPage() {
-    populateInitCart();
+    //populateInitCart();
     shoppingCart.forEach(addNewRoll);
     updateCartPrice();
 }
