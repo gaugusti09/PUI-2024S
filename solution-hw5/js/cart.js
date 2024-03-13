@@ -63,9 +63,6 @@ function addNewRoll(roll) {
 
 
     const cartWrapper = document.querySelector(".cart-wrapper");
-    //cartWrapper.appendChild(cartItem);
-    //rollIndexes +=1; vhjfdns
-    // removing roll items!
     
     let currentRoll = rollIndexes;
     cartItem.querySelector(".remove").onclick = function() {
@@ -90,7 +87,7 @@ function addNewRoll(roll) {
 function updateCartPrice() {
     let price = 0;
     //cart.forEach(addPrice(price));
-    cartItems.forEach(roll => totalPrice += roll.calculatedPrice);
+    shoppingCart.forEach(roll => totalPrice += roll.calculatedPrice);
     const priceElem = document.querySelector(".total-price");
     priceElem.textContent = "$" + price.toFixed(2);
 }
