@@ -20,7 +20,7 @@ a:link, a:visited {
 }
   
 a.hover, a.active {
-    color:black;
+    color:rgb(0, 0, 0);
 }
 
 /******** NAV + PAGE SPLIT FORMAT  ********/
@@ -34,7 +34,6 @@ a.hover, a.active {
 .left {
     left: 0;
     width: 30%;
-    overflow: hidden;
 }
 
 .right {
@@ -116,4 +115,52 @@ a.hover, a.active {
     line-height: 1em;
     margin-left: 2.5%;
     width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .risoImg {
+        position: relative;
+        height: 100px;
+        z-index: 200;
+    }
+    
+    .risoImg img {
+        height: 100%;
+        width: 55%;
+        margin: auto;
+        display: block;
+    }
+
+
+    .right-header-img{
+        height: 20%;
+    }
+
+    .section {
+        position: relative;
+        z-index: 200;
+        font-size: 3vw;
+        line-height: 1em;
+        margin: 10px 5px 10px 15px;
+    }
+
+
+    #page-title {
+        font-family: FT88-Serif;
+        text-align: left;
+        font-size: 4vw;
+        line-height: 1em;
+        margin-left: 2.5%;
+        position: relative;
+    }
+
+    .main-text {
+        font-family: PPNeueBit;
+        text-align: left;
+        font-size: 4vw;
+        line-height: 1em;
+        margin-left: 2.5%;
+        width: 90%;
+    }
 }
