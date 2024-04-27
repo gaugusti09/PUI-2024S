@@ -94,6 +94,14 @@ a.hover, a.active {
     height: 300px;
 }
 
+#icon {
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dotted black;
+}
+
 
 #page-title {
     font-family: FT88-Serif;
@@ -116,6 +124,11 @@ a.hover, a.active {
     margin-left: 2.5%;
     width: 90%;
 }
+
+
+
+/********  SIZING  ********/
+
 
 @media only screen and (max-width: 600px) {
 
