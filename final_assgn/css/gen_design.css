@@ -1,0 +1,119 @@
+/******** GEN FONT + TEXT  ********/
+body {
+    color: black;
+    font-family: FT88-Serif;
+}
+
+@font-face {
+    font-family: FT88-Serif;
+    src: url(FT88-Serif.otf);
+}
+
+@font-face {
+    font-family: PPNeueBit;
+    src: url(PPNeueBit-Bold.otf);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+  
+a.hover, a.active {
+    color:black;
+}
+
+/******** NAV + PAGE SPLIT FORMAT  ********/
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+    width: 30%;
+    overflow: hidden;
+}
+
+.right {
+    right: 0;
+    width: 70%;
+    border-left: thick double black;
+    overflow: scroll;
+}
+
+.horizontal-divider {
+    border: .5px solid black; 
+    border-radius: 5%;
+    position: relative;
+}
+
+#vertical-divider {
+    border-left: 2px solid black;
+    height: 100%;
+    position: absolute;
+    left: 30%;
+}
+
+.risoImg {
+    position: relative;
+    height: 200px;
+    z-index: 200;
+}
+
+.risoImg img {
+    height: 100%;
+    width: 55%;
+    margin: auto;
+    display: block;
+}
+
+.section {
+    position: relative;
+    z-index: 200;
+    font-size: 2vw;
+    line-height: 1em;
+    margin: 10px 5px 10px 15px;
+}
+
+/******** TEXT + MAIN IMAGES  ********/
+
+.right-header-img {
+    width: 99.95%;
+    height: 45%;
+    background-color: black;
+    display: block;
+    margin-left: .2vw;
+}
+
+.inner-desc-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+
+#page-title {
+    font-family: FT88-Serif;
+    text-align: left;
+    font-size: 1.9vw;
+    line-height: 1em;
+    margin-left: 2.5%;
+    position: relative;
+}
+
+#description {
+    height: 100%;
+}
+
+.main-text {
+    font-family: PPNeueBit;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 1em;
+    margin-left: 2.5%;
+    width: 90%;
+}

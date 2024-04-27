@@ -1,0 +1,13 @@
+Hi!! I wanted to ensure I properly credited the artists whose work populates this site.
+
+##INDEX.HTML
+
+##RISO_PRINTING.HTML
+
+##HISTORY.HTML
+
+##PLAYTIME.HTML
+
+##RESOURCES.HTML
+
+##AUTHOR.HTML
