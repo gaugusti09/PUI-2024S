@@ -2,6 +2,7 @@
 body {
     color: black;
     font-family: FT88-Serif;
+    background-color: rgb(255, 255, 255);
 }
 
 @font-face {

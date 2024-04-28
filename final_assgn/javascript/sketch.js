@@ -1,7 +1,7 @@
 let img; //variable to hold image, my default is this little robot fella
 
 function preload() {
-  img = loadImage('lil_guy.jpg'); //load image before sketch runs
+  img = loadImage('final_assgn/assets/lil_guy.jpg'); //load image before sketch runs
 }
 
 // create a canvas in order to sketch the color layers

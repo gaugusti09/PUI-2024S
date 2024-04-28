@@ -1,0 +1,100 @@
+.gallery-container {
+    max-width: 75%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
+    column-count: 4;
+    column-gap: 20%;
+    grid-gap: 20%;
+}
+
+  .image-box {
+    position: relative;
+    max-width: fit-content;
+    width: auto;
+    height: min-content;
+  }
+  
+  
+  .image-box img {
+    display: block;
+    max-width: 200px;
+    width: 300%;
+    transition: all 0.3s ease-in-out;
+    margin: 20% 20% 20% 20%;
+  }
+
+    
+  .image-box:hover::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-box:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+/*
+  .image-box {
+    position: relative;
+    max-width: fit-content;
+  }
+  
+  .image-box:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-box:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-box img {
+    max-width: 50%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+ */
+
+/* Style the modal to match the design of the gallery */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal img {
+    max-width: 50%;
+    max-height: 100%;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    max-width: 200px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
