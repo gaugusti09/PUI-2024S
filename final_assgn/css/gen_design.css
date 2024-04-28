@@ -93,6 +93,7 @@ a.hover, a.active {
     margin-left: auto;
     margin-right: auto;
     height: 300px;
+    outline: 1px dashed #5C85FE;
 }
 
 #icon {
