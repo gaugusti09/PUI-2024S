@@ -1,8 +1,8 @@
 /******** GEN FONT + TEXT  ********/
 body {
-    color: black;
+    color: rgb(51, 41, 41);
     font-family: FT88-Serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(251, 255, 233);
 }
 
 @font-face {
@@ -17,11 +17,11 @@ body {
 
 a:link, a:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(51, 41, 41);
 }
   
 a.hover, a.active {
-    color:rgb(46, 89, 54);
+    color: rgb(51, 41, 41);
 }
 
 /******** NAV + PAGE SPLIT FORMAT  ********/
@@ -45,13 +45,13 @@ a.hover, a.active {
 }
 
 .horizontal-divider {
-    border: .5px solid black; 
+    border: .5px solid rgb(51, 41, 41);
     border-radius: 5%;
     position: relative;
 }
 
 #vertical-divider {
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(51, 41, 41);
     height: 100%;
     position: absolute;
     left: 30%;
@@ -126,6 +126,10 @@ a.hover, a.active {
     width: 90%;
 }
 
+.highlight {
+    color: #5C85FE;
+    text-decoration: underline;
+}
 
 
 /********  SIZING  ********/
