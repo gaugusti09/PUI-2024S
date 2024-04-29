@@ -17,11 +17,11 @@ body {
 
 a:link, a:visited {
     text-decoration: none;
-    color: #5C85FE;
+    color: #5277e7;
 }
   
 a.hover, a.active {
-    color: #5C85FE;
+    color: #5277e7;
 }
   
 a h1 {
@@ -96,7 +96,7 @@ a h1 {
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-    outline: 1px dashed #5C85FE;
+    outline: 1px dashed #2151e0;
 }
 
 #icon {
@@ -131,7 +131,7 @@ a h1 {
 }
 
 .highlight {
-    color: #5C85FE;
+    color: #5277e7;
     text-decoration: underline;
 }
 
