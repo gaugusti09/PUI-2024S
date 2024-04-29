@@ -23,13 +23,8 @@ a:link, a:visited {
 a.hover, a.active {
     color: #5C85FE;
 }
-
-.section a:link, a:visited {
-    text-decoration: none;
-    color: rgb(91, 63, 63);
-}
   
-.section a.hover, a.active {
+a h1 {
     color: rgb(91, 63, 63);
 }
 
