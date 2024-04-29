@@ -132,6 +132,13 @@ a.hover, a.active {
     text-decoration: underline;
 }
 
+iframe{ 
+    border: none; 
+    width: 90%;
+    height: 90%;
+    margin-left: 2.5%;
+}
+
 
 /********  SIZING  ********/
 
