@@ -1,6 +1,6 @@
 /******** GEN FONT + TEXT  ********/
 body {
-    color: rgb(51, 41, 41);
+    color: rgb(91, 63, 63);
     font-family: FT88-Serif;
     background-color: rgb(251, 255, 233);
 }
@@ -17,11 +17,20 @@ body {
 
 a:link, a:visited {
     text-decoration: none;
-    color: rgb(51, 41, 41);
+    color: #5C85FE;
 }
   
 a.hover, a.active {
-    color: rgb(51, 41, 41);
+    color: #5C85FE;
+}
+
+.section a:link, a:visited {
+    text-decoration: none;
+    color: rgb(91, 63, 63);
+}
+  
+.section a.hover, a.active {
+    color: rgb(91, 63, 63);
 }
 
 /******** NAV + PAGE SPLIT FORMAT  ********/
@@ -40,18 +49,18 @@ a.hover, a.active {
 .right {
     right: 0;
     width: 70%;
-    border-left: thick double black;
+    border-left: thick double rgb(91, 63, 63);
     overflow: scroll;
 }
 
 .horizontal-divider {
-    border: .5px solid rgb(51, 41, 41);
+    border: .5px solid rgb(91, 63, 63);
     border-radius: 5%;
     position: relative;
 }
 
 #vertical-divider {
-    border-left: 2px solid rgb(51, 41, 41);
+    border-left: 2px solid rgb(91, 63, 63);
     height: 100%;
     position: absolute;
     left: 30%;
@@ -83,7 +92,6 @@ a.hover, a.active {
 .right-header-img {
     width: 99.95%;
     height: 45%;
-    background-color: black;
     display: block;
     margin-left: .2vw;
 }
